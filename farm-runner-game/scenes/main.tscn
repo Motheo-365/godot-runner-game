@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://guw0yma88rwi"]
+
+[ext_resource type="PackedScene" uid="uid://c8pgj8pi4wxcd" path="res://scenes/player.tscn" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cb4kj108u0dhe" path="res://scenes/obstacles.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://ix68y47j36m7" path="res://scenes/background.tscn" id="3_tbgi4"]
+
+[node name="Main" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource("3_tbgi4")]
+
+[node name="player" parent="." instance=ExtResource("1_sugp2")]
+top_level = false
+z_index = 10
+
+[node name="obstacleSpawner" type="Node2D" parent="."]
+
+[node name="obstacles" parent="." instance=ExtResource("2_jyhfs")]
+z_index = 10

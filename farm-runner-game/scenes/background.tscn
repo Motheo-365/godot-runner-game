@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://ix68y47j36m7"]
+
+[ext_resource type="Texture2D" uid="uid://fsed8boeyc6c" path="res://media/background.png" id="1_bkp1e"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bkp1e"]
+a = Vector2(639.055, -95)
+b = Vector2(-511.945, -96)
+
+[node name="background" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -3
+z_as_relative = false
+position = Vector2(575.8334, 322.50003)
+scale = Vector2(0.45013025, 0.45208338)
+texture = ExtResource("1_bkp1e")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 2
+position = Vector2(511.945, 673)
+shape = SubResource("SegmentShape2D_bkp1e")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_left = -3.0
+offset_top = 576.0
+offset_right = 1152.0
+offset_bottom = 649.0
+color = Color(0.190898, 0.11974042, 0.093864925, 1)
+metadata/_edit_lock_ = true
