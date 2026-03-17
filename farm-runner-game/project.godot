@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="farm-runner-game"
-run/main_scene="uid://guw0yma88rwi"
+run/main_scene="uid://ifiv45w12vb5"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"

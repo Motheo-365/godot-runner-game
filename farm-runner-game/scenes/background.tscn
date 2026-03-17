@@ -14,7 +14,6 @@ z_as_relative = false
 position = Vector2(575.8334, 322.50003)
 scale = Vector2(0.45013025, 0.45208338)
 texture = ExtResource("1_bkp1e")
-metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
